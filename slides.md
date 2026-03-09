@@ -12,7 +12,7 @@ duration: 35min
 
 # Design in the Age of AI
 
-How designers go from Figma to code — and back again
+How designers work directly with code — and bring it back to Figma
 
 <div class="abs-br m-6 text-xl opacity-50">
   Press Space to advance
@@ -339,7 +339,7 @@ layout: section
 
 ---
 
-## Bring It Back into Figma
+## Bring it back into Figma
 
 Use Figma MCP to generate a Figma design from your code.
 
@@ -349,7 +349,15 @@ Use Figma MCP to generate a Figma design from your code.
 
 </div>
 
-<div class="grid grid-cols-2 gap-6 mt-6">
+<div class="grid grid-cols-3 gap-6 mt-6">
+<div v-click>
+
+**Setup**
+- Get your Figma API key from Account Settings → Personal Access Tokens
+- Add it to Cursor's MCP config as `FIGMA_API_KEY`
+- Restart Cursor to activate
+
+</div>
 <div v-click>
 
 **Use cases**
@@ -407,9 +415,17 @@ layout: section
 
 Send the updated design from Figma back into the codebase.
 
-<div class="p-4 bg-blue-500 bg-opacity-10 border border-blue-400 border-opacity-30 rounded font-mono text-sm mt-4">
+<v-clicks>
 
-> Here is my Figma selection for the new button.<br>
+1. In Figma, select the frame or component you updated
+2. Copy the **share link** (right-click → Copy link)
+3. Paste it into Claude Code with your prompt
+
+</v-clicks>
+
+<div v-click class="p-4 bg-blue-500 bg-opacity-10 border border-blue-400 border-opacity-30 rounded font-mono text-sm mt-4">
+
+> Here is my Figma selection for the new button: [paste Figma link]<br>
 > Apply this new design.
 
 </div>
@@ -534,4 +550,10 @@ class: text-center
 
 <div v-click class="mt-10 text-2xl opacity-80">
   AI doesn't replace designers — it gives them <strong>superpowers</strong>.
+</div>
+
+<div v-click class="mt-8">
+  <button @click="$slidev.nav.go(1)" class="px-6 py-2 border border-white border-opacity-30 rounded opacity-50 hover:opacity-100 transition-opacity text-sm">
+    Back to beginning
+  </button>
 </div>
