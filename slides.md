@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
+background: https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1920
 title: Design in the Age of AI
 info: |
   ## Design in the Age of AI
