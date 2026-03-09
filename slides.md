@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920
+background: https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1920
 title: Design in the Age of AI
 info: |
   ## Design in the Age of AI
@@ -12,7 +12,7 @@ duration: 35min
 
 # Design in the Age of AI
 
-How designers work directly with code — and bring it back to Figma
+The designer's new loop: code → Figma → code
 
 <div class="abs-br m-6 text-xl opacity-50">
   Press Space to advance
